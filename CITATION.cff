@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this model, please cite the paper below."
+title: "Storage-Capacity Scenario Model for a Dual-Plane GB300 NVL72 Cluster Network"
+authors:
+  - family-names: Liang
+    given-names: Rui
+    affiliation: "K&K Data Service Inc."
+license: MIT
+repository-code: "https://github.com/kkdatasvc/storage-capacity-model"
+preferred-citation:
+  type: report
+  title: "A Conservative Scenario Method for Storage-Access Capacity and Failure Bounds in a Dual-Plane GB300 NVL72 Cluster Network"
+  authors:
+    - family-names: Liang
+      given-names: Rui
+      affiliation: "K&K Data Service Inc."
+  year: 2026
+  doi: 10.5281/zenodo.23247527
+  url: "https://doi.org/10.5281/zenodo.23247527"

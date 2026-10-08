@@ -1,0 +1,1009 @@
+{
+ "units": {
+  "TB": "1e12 byte",
+  "GB/s": "1e9 byte/s",
+  "Tb/s": "1e12 bit/s, per direction"
+ },
+ "baseline": {
+  "uplink_tbps_per_side": 336.0,
+  "cvs_unused_ports_per_side": 56,
+  "cvs_unused_tbps_per_side": 22.400000000000002,
+  "leaf_uplink_tbps": 11.200000000000001,
+  "status": "DESIGN"
+ },
+ "scenarios": [
+  {
+   "id": "S01",
+   "title": "SRC-05 Standard scaled to 90 cabinets, concurrent read and write, SA-1, 16 ports per side",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "standard read",
+     "kind": "training_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 1012.5,
+     "clients": 1620,
+     "group": null
+    },
+    {
+     "name": "standard write",
+     "kind": "checkpoint_write",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 506.25,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S02",
+   "title": "SRC-05 Enhanced scaled, SA-1, 16 ports per side",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "enhanced read",
+     "kind": "training_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 3150.0,
+     "clients": 1620,
+     "group": null
+    },
+    {
+     "name": "enhanced write",
+     "kind": "checkpoint_write",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 1575.0,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S03",
+   "title": "SRC-05 Enhanced scaled, SA-1, 36 ports per side",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "enhanced read",
+     "kind": "training_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 3150.0,
+     "clients": 1620,
+     "group": null
+    },
+    {
+     "name": "enhanced write",
+     "kind": "checkpoint_write",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 1575.0,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 36,
+    "B": 36
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S04",
+   "title": "S03 with side A lost; all clients and storage move to side B (rho = 1)",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "enhanced read",
+     "kind": "training_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 3150.0,
+     "clients": 1620,
+     "group": null
+    },
+    {
+     "name": "enhanced write",
+     "kind": "checkpoint_write",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 1575.0,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 36,
+    "B": 36
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "side_lost:A",
+   "redirect": 1.0,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S05",
+   "title": "S03 with side A lost; no transfer (clients fixed to a side, rho = 0)",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "enhanced read",
+     "kind": "training_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 3150.0,
+     "clients": 1620,
+     "group": null
+    },
+    {
+     "name": "enhanced write",
+     "kind": "checkpoint_write",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 1575.0,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 36,
+    "B": 36
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "side_lost:A",
+   "redirect": 0.0,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S06",
+   "title": "S03 with one side-A CVS lost; sessions redirected within the side",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "enhanced read",
+     "kind": "training_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 3150.0,
+     "clients": 1620,
+     "group": null
+    },
+    {
+     "name": "enhanced write",
+     "kind": "checkpoint_write",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 1575.0,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 36,
+    "B": 36
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "cvs_lost:A",
+   "redirect": null,
+   "cvs_loss_assumption": "even_spread_rehome",
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S06n",
+   "title": "S06 without redirection",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "enhanced read",
+     "kind": "training_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 3150.0,
+     "clients": 1620,
+     "group": null
+    },
+    {
+     "name": "enhanced write",
+     "kind": "checkpoint_write",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 1575.0,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 36,
+    "B": 36
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "cvs_lost:A",
+   "redirect": null,
+   "cvs_loss_assumption": "even_spread_no_rehome",
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S07a",
+   "title": "10 TB dataset distributed to the cache of every tray (F = 1620), deadline 4 h",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "staging",
+     "kind": "dataset_staging",
+     "unique_tb": 10.0,
+     "fanout": 1620,
+     "cache_hit": 0.0,
+     "deadline_s": 14400,
+     "rate_gbytes_s": null,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S07b",
+   "title": "10 TB dataset distributed in shards (F = 1), deadline 4 h",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "staging",
+     "kind": "dataset_staging",
+     "unique_tb": 10.0,
+     "fanout": 1,
+     "cache_hit": 0.0,
+     "deadline_s": 14400,
+     "rate_gbytes_s": null,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S08",
+   "title": "Synchronous checkpoint write of 50 TB, deadline 120 s",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "ckpt",
+     "kind": "checkpoint_write",
+     "unique_tb": 50.0,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": 120,
+     "rate_gbytes_s": null,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S09",
+   "title": "Recovery read of 50 TB, 8 data-parallel replicas, deadline 300 s",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "restart",
+     "kind": "restart_read",
+     "unique_tb": 50.0,
+     "fanout": 8,
+     "cache_hit": 0.0,
+     "deadline_s": 300,
+     "rate_gbytes_s": null,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S10",
+   "title": "Training read (Enhanced rate, cache hit 0.8) concurrent with the S08 write",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "train",
+     "kind": "training_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.8,
+     "deadline_s": null,
+     "rate_gbytes_s": 3150.0,
+     "clients": 1620,
+     "group": null
+    },
+    {
+     "name": "ckpt",
+     "kind": "checkpoint_write",
+     "unique_tb": 50.0,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": 120,
+     "rate_gbytes_s": null,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S11",
+   "title": "Enhanced scaled, SA-3 on unused NS-leaf ports, 2 ports per leaf",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "enhanced read",
+     "kind": "training_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 3150.0,
+     "clients": 1620,
+     "group": null
+    },
+    {
+     "name": "enhanced write",
+     "kind": "checkpoint_write",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 1575.0,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "leaf_distributed",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": 2,
+   "sa3_hosting_leaves": 30,
+   "sa3_placement": "uniform",
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S11f",
+   "title": "S11 with side A lost (replica distribution unknown)",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "enhanced read",
+     "kind": "training_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 3150.0,
+     "clients": 1620,
+     "group": null
+    },
+    {
+     "name": "enhanced write",
+     "kind": "checkpoint_write",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 1575.0,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "leaf_distributed",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": 2,
+   "sa3_hosting_leaves": 30,
+   "sa3_placement": "uniform",
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "side_lost:A",
+   "redirect": 1.0,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S12",
+   "title": "S09 with one side-A NS leaf lost; affected trays move to side B (rho = 1)",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "restart",
+     "kind": "restart_read",
+     "unique_tb": 50.0,
+     "fanout": 8,
+     "cache_hit": 0.0,
+     "deadline_s": 300,
+     "rate_gbytes_s": null,
+     "clients": 1620,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "ns_leaf_lost:A",
+   "redirect": 1.0,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S13",
+   "title": "One tray reads 100 GB/s while 1,620 trays write 1 GB/s in total",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "hot read",
+     "kind": "restart_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 100.0,
+     "clients": 1,
+     "group": "hot"
+    },
+    {
+     "name": "bulk write",
+     "kind": "checkpoint_write",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 1.0,
+     "clients": 1620,
+     "group": "all"
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S14",
+   "title": "Two single-tray reads of 50 GB/s, group overlap unknown",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "read g1",
+     "kind": "restart_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 50.0,
+     "clients": 1,
+     "group": "g1"
+    },
+    {
+     "name": "read g2",
+     "kind": "restart_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 50.0,
+     "clients": 1,
+     "group": "g2"
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "S14d",
+   "title": "S14 with the two groups declared disjoint",
+   "status": "STUDY",
+   "flows": [
+    {
+     "name": "read g1",
+     "kind": "restart_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 50.0,
+     "clients": 1,
+     "group": "g1"
+    },
+    {
+     "name": "read g2",
+     "kind": "restart_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": 50.0,
+     "clients": 1,
+     "group": "g2"
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": 0.9,
+   "reserve_fraction": 0.1,
+   "storage_ports": {
+    "A": 16,
+    "B": 16
+   },
+   "border_reserved_ports": 16,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "disjoint",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": 54,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": ""
+  },
+  {
+   "id": "P00",
+   "title": "Project scenario; all demand inputs HOLD",
+   "status": "HOLD",
+   "flows": [
+    {
+     "name": "dataset",
+     "kind": "dataset_staging",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": null,
+     "clients": null,
+     "group": null
+    },
+    {
+     "name": "train",
+     "kind": "training_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": null,
+     "clients": null,
+     "group": null
+    },
+    {
+     "name": "ckpt",
+     "kind": "checkpoint_write",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": null,
+     "clients": null,
+     "group": null
+    },
+    {
+     "name": "restart",
+     "kind": "restart_read",
+     "unique_tb": null,
+     "fanout": 1.0,
+     "cache_hit": 0.0,
+     "deadline_s": null,
+     "rate_gbytes_s": null,
+     "clients": null,
+     "group": null
+    }
+   ],
+   "attachment": "cvs_ports",
+   "payload_efficiency": null,
+   "reserve_fraction": null,
+   "storage_ports": {
+    "A": null,
+    "B": null
+   },
+   "border_reserved_ports": null,
+   "topology_delta": null,
+   "leaf_storage_ports": null,
+   "sa3_hosting_leaves": null,
+   "sa3_placement": null,
+   "side_split": {
+    "A": 0.5,
+    "B": 0.5
+   },
+   "group_relation": "unknown",
+   "failure": "normal",
+   "redirect": null,
+   "cvs_loss_assumption": null,
+   "clients_per_leaf_max": null,
+   "storage_read_limit_gbytes_s": null,
+   "storage_write_limit_gbytes_s": null,
+   "host_port_achievable_gbps": null,
+   "note": "dataset size, cache capacity/hit, concurrency, checkpoint size/interval/deadline, storage system throughput, client multipath and port assignment are HOLD"
+  }
+ ]
+}

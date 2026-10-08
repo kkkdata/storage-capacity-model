@@ -1,0 +1,3531 @@
+[
+ {
+  "id": "S01",
+  "title": "SRC-05 Standard scaled to 90 cabinets, concurrent read and write, SA-1, 16 ports per side",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "normal",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 8.1,
+    "line_tbps": 9.0,
+    "payload_gbytes_s": 1012.5,
+    "served_line_tbps": 9.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 9.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.002777777777777778,
+       "demand_lower_tbps": 0.002777777777777778,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.007716049382716049,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.15,
+       "demand_lower_tbps": 0.15,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.014880952380952378,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 4.5,
+       "demand_lower_tbps": 4.5,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.01488095238095238,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 4.5,
+       "demand_lower_tbps": 4.5,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.703125,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 12,
+      "storage_ports_required": 12,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.002777777777777778,
+       "demand_lower_tbps": 0.002777777777777778,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.007716049382716049,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.15,
+       "demand_lower_tbps": 0.15,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.014880952380952378,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 4.5,
+       "demand_lower_tbps": 4.5,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.01488095238095238,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 4.5,
+       "demand_lower_tbps": 4.5,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.703125,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 12,
+      "storage_ports_required": 12,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 1012.5,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.703125,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 4.05,
+    "line_tbps": 4.5,
+    "payload_gbytes_s": 506.25,
+    "served_line_tbps": 4.5,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 4.5,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.001388888888888889,
+       "demand_lower_tbps": 0.001388888888888889,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0038580246913580245,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.075,
+       "demand_lower_tbps": 0.075,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.007440476190476189,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 2.25,
+       "demand_lower_tbps": 2.25,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.00744047619047619,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 2.25,
+       "demand_lower_tbps": 2.25,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.3515625,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 6,
+      "storage_ports_required": 6,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.001388888888888889,
+       "demand_lower_tbps": 0.001388888888888889,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0038580246913580245,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.075,
+       "demand_lower_tbps": 0.075,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.007440476190476189,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 2.25,
+       "demand_lower_tbps": 2.25,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.00744047619047619,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 2.25,
+       "demand_lower_tbps": 2.25,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.3515625,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 6,
+      "storage_ports_required": 6,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 506.25,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.3515625,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S02",
+  "title": "SRC-05 Enhanced scaled, SA-1, 16 ports per side",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "normal",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 25.2,
+    "line_tbps": 28.0,
+    "payload_gbytes_s": 3150.0,
+    "served_line_tbps": 28.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 28.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.008641975308641974,
+       "demand_lower_tbps": 0.008641975308641974,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.024005486968449927,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4666666666666666,
+       "demand_lower_tbps": 0.4666666666666666,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04629629629629628,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.046296296296296294,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 2.1875,
+       "verdict": "exceeds",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 35,
+      "storage_ports_required": 35,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.008641975308641974,
+       "demand_lower_tbps": 0.008641975308641974,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.024005486968449927,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4666666666666666,
+       "demand_lower_tbps": 0.4666666666666666,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04629629629629628,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.046296296296296294,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 2.1875,
+       "verdict": "exceeds",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 35,
+      "storage_ports_required": 35,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 3150.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 2.1875,
+    "deadline_stretch_lower": 2.1875,
+    "deadline_stretch": 2.1875,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 12.6,
+    "line_tbps": 14.0,
+    "payload_gbytes_s": 1575.0,
+    "served_line_tbps": 14.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 14.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.004320987654320987,
+       "demand_lower_tbps": 0.004320987654320987,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.012002743484224964,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.2333333333333333,
+       "demand_lower_tbps": 0.2333333333333333,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.02314814814814814,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.023148148148148147,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 1.09375,
+       "verdict": "exceeds",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 18,
+      "storage_ports_required": 18,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.004320987654320987,
+       "demand_lower_tbps": 0.004320987654320987,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.012002743484224964,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.2333333333333333,
+       "demand_lower_tbps": 0.2333333333333333,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.02314814814814814,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.023148148148148147,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 1.09375,
+       "verdict": "exceeds",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 18,
+      "storage_ports_required": 18,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 1575.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 1.09375,
+    "deadline_stretch_lower": 1.09375,
+    "deadline_stretch": 1.09375,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [
+   "read/A: storage ports required 35 > assigned 16",
+   "read/B: storage ports required 35 > assigned 16",
+   "write/A: storage ports required 18 > assigned 16",
+   "write/B: storage ports required 18 > assigned 16",
+   "read/A: storage_attachment exceeds -> port/topology delta",
+   "read/B: storage_attachment exceeds -> port/topology delta",
+   "write/A: storage_attachment exceeds -> port/topology delta",
+   "write/B: storage_attachment exceeds -> port/topology delta"
+  ],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S03",
+  "title": "SRC-05 Enhanced scaled, SA-1, 36 ports per side",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "normal",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 25.2,
+    "line_tbps": 28.0,
+    "payload_gbytes_s": 3150.0,
+    "served_line_tbps": 28.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 28.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.008641975308641974,
+       "demand_lower_tbps": 0.008641975308641974,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.024005486968449927,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4666666666666666,
+       "demand_lower_tbps": 0.4666666666666666,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04629629629629628,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.046296296296296294,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 14.4,
+       "utilisation": 0.9722222222222222,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 35,
+      "storage_ports_required": 35,
+      "storage_ports_assigned": 36,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.008641975308641974,
+       "demand_lower_tbps": 0.008641975308641974,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.024005486968449927,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4666666666666666,
+       "demand_lower_tbps": 0.4666666666666666,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04629629629629628,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.046296296296296294,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 14.4,
+       "utilisation": 0.9722222222222222,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 35,
+      "storage_ports_required": 35,
+      "storage_ports_assigned": 36,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 3150.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.9722222222222222,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 12.6,
+    "line_tbps": 14.0,
+    "payload_gbytes_s": 1575.0,
+    "served_line_tbps": 14.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 14.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.004320987654320987,
+       "demand_lower_tbps": 0.004320987654320987,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.012002743484224964,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.2333333333333333,
+       "demand_lower_tbps": 0.2333333333333333,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.02314814814814814,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.023148148148148147,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 14.4,
+       "utilisation": 0.4861111111111111,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 18,
+      "storage_ports_required": 18,
+      "storage_ports_assigned": 36,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.004320987654320987,
+       "demand_lower_tbps": 0.004320987654320987,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.012002743484224964,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.2333333333333333,
+       "demand_lower_tbps": 0.2333333333333333,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.02314814814814814,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.023148148148148147,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 14.4,
+       "utilisation": 0.4861111111111111,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 18,
+      "storage_ports_required": 18,
+      "storage_ports_assigned": 36,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 1575.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.4861111111111111,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S04",
+  "title": "S03 with side A lost; all clients and storage move to side B (rho = 1)",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "side_lost:A",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 25.2,
+    "line_tbps": 28.0,
+    "payload_gbytes_s": 3150.0,
+    "served_line_tbps": 28.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 28.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.01728395061728395,
+       "demand_lower_tbps": 0.01728395061728395,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.048010973936899855,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.9333333333333332,
+       "demand_lower_tbps": 0.9333333333333332,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.09259259259259256,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 28.0,
+       "demand_lower_tbps": 28.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.09259259259259259,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 28.0,
+       "demand_lower_tbps": 28.0,
+       "capacity_tbps": 14.4,
+       "utilisation": 1.9444444444444444,
+       "verdict": "exceeds",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 70,
+      "storage_ports_required": 70,
+      "storage_ports_assigned": 36,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 3150.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 1.9444444444444444,
+    "deadline_stretch_lower": 1.9444444444444444,
+    "deadline_stretch": 1.9444444444444444,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 12.6,
+    "line_tbps": 14.0,
+    "payload_gbytes_s": 1575.0,
+    "served_line_tbps": 14.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 14.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.008641975308641974,
+       "demand_lower_tbps": 0.008641975308641974,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.024005486968449927,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4666666666666666,
+       "demand_lower_tbps": 0.4666666666666666,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04629629629629628,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.046296296296296294,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 14.4,
+       "utilisation": 0.9722222222222222,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 35,
+      "storage_ports_required": 35,
+      "storage_ports_assigned": 36,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 1575.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.9722222222222222,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [
+   "read/B: storage ports required 70 > assigned 36",
+   "read/B: required 70 > CVS unused ports available 40 -> topology delta outside this port pool (unselected)",
+   "read/B: storage_attachment exceeds -> port/topology delta"
+  ],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S05",
+  "title": "S03 with side A lost; no transfer (clients fixed to a side, rho = 0)",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "side_lost:A",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 25.2,
+    "line_tbps": 28.0,
+    "payload_gbytes_s": 3150.0,
+    "served_line_tbps": 14.0,
+    "unserved_line_tbps": 14.0,
+    "served_line_upper_tbps": 14.0,
+    "unserved_line_lower_tbps": 14.0,
+    "conservation_ok": true,
+    "sides": {
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.008641975308641974,
+       "demand_lower_tbps": 0.008641975308641974,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.024005486968449927,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4666666666666666,
+       "demand_lower_tbps": 0.4666666666666666,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04629629629629628,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.046296296296296294,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 14.4,
+       "utilisation": 0.9722222222222222,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 35,
+      "storage_ports_required": 35,
+      "storage_ports_assigned": 36,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 3150.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.9722222222222222,
+    "deadline_stretch_lower": null,
+    "deadline_stretch": null,
+    "deadline_note": "not applicable: part of the demand has no path; deadline not met for that share"
+   },
+   "write": {
+    "payload_tbps": 12.6,
+    "line_tbps": 14.0,
+    "payload_gbytes_s": 1575.0,
+    "served_line_tbps": 7.0,
+    "unserved_line_tbps": 7.0,
+    "served_line_upper_tbps": 7.0,
+    "unserved_line_lower_tbps": 7.0,
+    "conservation_ok": true,
+    "sides": {
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.004320987654320987,
+       "demand_lower_tbps": 0.004320987654320987,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.012002743484224964,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.2333333333333333,
+       "demand_lower_tbps": 0.2333333333333333,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.02314814814814814,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.023148148148148147,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 14.4,
+       "utilisation": 0.4861111111111111,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 18,
+      "storage_ports_required": 18,
+      "storage_ports_assigned": 36,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 1575.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.4861111111111111,
+    "deadline_stretch_lower": null,
+    "deadline_stretch": null,
+    "deadline_note": "not applicable: part of the demand has no path; deadline not met for that share"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [
+   "read: 14.000 Tb/s line-rate demand without a path (redirect=0)",
+   "write: 7.000 Tb/s line-rate demand without a path (redirect=0)"
+  ],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S06",
+  "title": "S03 with one side-A CVS lost; sessions redirected within the side",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "cvs_lost:A",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 25.2,
+    "line_tbps": 28.0,
+    "payload_gbytes_s": 3150.0,
+    "served_line_tbps": 28.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 28.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.008641975308641974,
+       "demand_lower_tbps": 0.008641975308641974,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.024005486968449927,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4666666666666666,
+       "demand_lower_tbps": 0.4666666666666666,
+       "capacity_tbps": 8.64,
+       "utilisation": 0.054012345679012336,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 259.2,
+       "utilisation": 0.05401234567901235,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 12.0,
+       "utilisation": 1.1666666666666667,
+       "verdict": "exceeds",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 35,
+      "storage_ports_required": 35,
+      "storage_ports_assigned": 30,
+      "ports_available_for_storage": 34
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.008641975308641974,
+       "demand_lower_tbps": 0.008641975308641974,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.024005486968449927,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4666666666666666,
+       "demand_lower_tbps": 0.4666666666666666,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04629629629629628,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.046296296296296294,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 14.4,
+       "utilisation": 0.9722222222222222,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 35,
+      "storage_ports_required": 35,
+      "storage_ports_assigned": 36,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 3150.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 1.1666666666666667,
+    "deadline_stretch_lower": 1.1666666666666667,
+    "deadline_stretch": 1.1666666666666667,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 12.6,
+    "line_tbps": 14.0,
+    "payload_gbytes_s": 1575.0,
+    "served_line_tbps": 14.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 14.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.004320987654320987,
+       "demand_lower_tbps": 0.004320987654320987,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.012002743484224964,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.2333333333333333,
+       "demand_lower_tbps": 0.2333333333333333,
+       "capacity_tbps": 8.64,
+       "utilisation": 0.027006172839506168,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 259.2,
+       "utilisation": 0.027006172839506175,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 12.0,
+       "utilisation": 0.5833333333333334,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 18,
+      "storage_ports_required": 18,
+      "storage_ports_assigned": 30,
+      "ports_available_for_storage": 34
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.004320987654320987,
+       "demand_lower_tbps": 0.004320987654320987,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.012002743484224964,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.2333333333333333,
+       "demand_lower_tbps": 0.2333333333333333,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.02314814814814814,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.023148148148148147,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 14.4,
+       "utilisation": 0.4861111111111111,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 18,
+      "storage_ports_required": 18,
+      "storage_ports_assigned": 36,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 1575.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.5833333333333334,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [
+   "read/A: storage ports required 35 > assigned 30",
+   "read/A: required 35 > CVS unused ports available 34 -> topology delta outside this port pool (unselected)",
+   "read/A: storage_attachment exceeds -> port/topology delta"
+  ],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S06n",
+  "title": "S06 without redirection",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "cvs_lost:A",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 25.2,
+    "line_tbps": 28.0,
+    "payload_gbytes_s": 3150.0,
+    "served_line_tbps": 25.666666666666668,
+    "unserved_line_tbps": 2.3333333333333335,
+    "served_line_upper_tbps": 25.666666666666668,
+    "unserved_line_lower_tbps": 2.3333333333333335,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.008641975308641974,
+       "demand_lower_tbps": 0.008641975308641974,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.024005486968449927,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4666666666666666,
+       "demand_lower_tbps": 0.3888888888888889,
+       "capacity_tbps": 8.64,
+       "utilisation": 0.054012345679012336,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 11.666666666666666,
+       "demand_lower_tbps": 11.666666666666666,
+       "capacity_tbps": 259.2,
+       "utilisation": 0.04501028806584362,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 11.666666666666666,
+       "demand_lower_tbps": 11.666666666666666,
+       "capacity_tbps": 12.0,
+       "utilisation": 0.9722222222222222,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 30,
+      "storage_ports_required": 30,
+      "storage_ports_assigned": 30,
+      "ports_available_for_storage": 34
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.008641975308641974,
+       "demand_lower_tbps": 0.008641975308641974,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.024005486968449927,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4666666666666666,
+       "demand_lower_tbps": 0.4666666666666666,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04629629629629628,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.046296296296296294,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 14.0,
+       "demand_lower_tbps": 14.0,
+       "capacity_tbps": 14.4,
+       "utilisation": 0.9722222222222222,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 35,
+      "storage_ports_required": 35,
+      "storage_ports_assigned": 36,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 3150.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.9722222222222222,
+    "deadline_stretch_lower": null,
+    "deadline_stretch": null,
+    "deadline_note": "not applicable: part of the demand has no path; deadline not met for that share"
+   },
+   "write": {
+    "payload_tbps": 12.6,
+    "line_tbps": 14.0,
+    "payload_gbytes_s": 1575.0,
+    "served_line_tbps": 12.833333333333334,
+    "unserved_line_tbps": 1.1666666666666667,
+    "served_line_upper_tbps": 12.833333333333334,
+    "unserved_line_lower_tbps": 1.1666666666666667,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.004320987654320987,
+       "demand_lower_tbps": 0.004320987654320987,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.012002743484224964,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.2333333333333333,
+       "demand_lower_tbps": 0.19444444444444445,
+       "capacity_tbps": 8.64,
+       "utilisation": 0.027006172839506168,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 5.833333333333333,
+       "demand_lower_tbps": 5.833333333333333,
+       "capacity_tbps": 259.2,
+       "utilisation": 0.02250514403292181,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 5.833333333333333,
+       "demand_lower_tbps": 5.833333333333333,
+       "capacity_tbps": 12.0,
+       "utilisation": 0.4861111111111111,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 15,
+      "storage_ports_required": 15,
+      "storage_ports_assigned": 30,
+      "ports_available_for_storage": 34
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.004320987654320987,
+       "demand_lower_tbps": 0.004320987654320987,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.012002743484224964,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.2333333333333333,
+       "demand_lower_tbps": 0.2333333333333333,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.02314814814814814,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.023148148148148147,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 7.0,
+       "demand_lower_tbps": 7.0,
+       "capacity_tbps": 14.4,
+       "utilisation": 0.4861111111111111,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 18,
+      "storage_ports_required": 18,
+      "storage_ports_assigned": 36,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 1575.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.4861111111111111,
+    "deadline_stretch_lower": null,
+    "deadline_stretch": null,
+    "deadline_note": "not applicable: part of the demand has no path; deadline not met for that share"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [
+   "read: 2.333 Tb/s line-rate demand without a path (even_spread_no_rehome)",
+   "write: 1.167 Tb/s line-rate demand without a path (even_spread_no_rehome)"
+  ],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S07a",
+  "title": "10 TB dataset distributed to the cache of every tray (F = 1620), deadline 4 h",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "normal",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 9.0,
+    "line_tbps": 10.0,
+    "payload_gbytes_s": 1125.0,
+    "served_line_tbps": 10.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 10.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.0030864197530864196,
+       "demand_lower_tbps": 0.0030864197530864196,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.008573388203017831,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.16666666666666666,
+       "demand_lower_tbps": 0.16666666666666666,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.01653439153439153,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 5.0,
+       "demand_lower_tbps": 5.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.016534391534391533,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 5.0,
+       "demand_lower_tbps": 5.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.78125,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 13,
+      "storage_ports_required": 13,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.0030864197530864196,
+       "demand_lower_tbps": 0.0030864197530864196,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.008573388203017831,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.16666666666666666,
+       "demand_lower_tbps": 0.16666666666666666,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.01653439153439153,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 5.0,
+       "demand_lower_tbps": 5.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.016534391534391533,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 5.0,
+       "demand_lower_tbps": 5.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.78125,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 13,
+      "storage_ports_required": 13,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 1125.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.78125,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 0,
+    "line_tbps": 0.0,
+    "payload_gbytes_s": 0.0,
+    "served_line_tbps": 0.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 0.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 0.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.0,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S07b",
+  "title": "10 TB dataset distributed in shards (F = 1), deadline 4 h",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "normal",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 0.005555555555555556,
+    "line_tbps": 0.006172839506172839,
+    "payload_gbytes_s": 0.6944444444444444,
+    "served_line_tbps": 0.006172839506172839,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 0.006172839506172839,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 1.9051973784484072e-06,
+       "demand_lower_tbps": 1.9051973784484072e-06,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 5.292214940134463e-06,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.00010288065843621399,
+       "demand_lower_tbps": 0.00010288065843621399,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 1.0206414527402179e-05,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0030864197530864196,
+       "demand_lower_tbps": 0.0030864197530864196,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 1.020641452740218e-05,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0030864197530864196,
+       "demand_lower_tbps": 0.0030864197530864196,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.00048225308641975306,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 1,
+      "storage_ports_required": 1,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 1.9051973784484072e-06,
+       "demand_lower_tbps": 1.9051973784484072e-06,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 5.292214940134463e-06,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.00010288065843621399,
+       "demand_lower_tbps": 0.00010288065843621399,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 1.0206414527402179e-05,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0030864197530864196,
+       "demand_lower_tbps": 0.0030864197530864196,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 1.020641452740218e-05,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0030864197530864196,
+       "demand_lower_tbps": 0.0030864197530864196,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.00048225308641975306,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 1,
+      "storage_ports_required": 1,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 0.6944444444444444,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.00048225308641975306,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 0,
+    "line_tbps": 0.0,
+    "payload_gbytes_s": 0.0,
+    "served_line_tbps": 0.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 0.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 0.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.0,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S08",
+  "title": "Synchronous checkpoint write of 50 TB, deadline 120 s",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "normal",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 0,
+    "line_tbps": 0.0,
+    "payload_gbytes_s": 0.0,
+    "served_line_tbps": 0.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 0.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 0.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.0,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 3.3333333333333335,
+    "line_tbps": 3.7037037037037037,
+    "payload_gbytes_s": 416.6666666666667,
+    "served_line_tbps": 3.7037037037037037,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 3.7037037037037037,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.0011431184270690445,
+       "demand_lower_tbps": 0.0011431184270690445,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.003175328964080679,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0617283950617284,
+       "demand_lower_tbps": 0.0617283950617284,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0061238487164413085,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 1.8518518518518519,
+       "demand_lower_tbps": 1.8518518518518519,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0061238487164413085,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 1.8518518518518519,
+       "demand_lower_tbps": 1.8518518518518519,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.28935185185185186,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 5,
+      "storage_ports_required": 5,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.0011431184270690445,
+       "demand_lower_tbps": 0.0011431184270690445,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.003175328964080679,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0617283950617284,
+       "demand_lower_tbps": 0.0617283950617284,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0061238487164413085,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 1.8518518518518519,
+       "demand_lower_tbps": 1.8518518518518519,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0061238487164413085,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 1.8518518518518519,
+       "demand_lower_tbps": 1.8518518518518519,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.28935185185185186,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 5,
+      "storage_ports_required": 5,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 416.6666666666667,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.28935185185185186,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S09",
+  "title": "Recovery read of 50 TB, 8 data-parallel replicas, deadline 300 s",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "normal",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 10.666666666666666,
+    "line_tbps": 11.851851851851851,
+    "payload_gbytes_s": 1333.3333333333333,
+    "served_line_tbps": 11.851851851851851,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 11.851851851851851,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.003657978966620942,
+       "demand_lower_tbps": 0.003657978966620942,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.01016105268505817,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.19753086419753085,
+       "demand_lower_tbps": 0.19753086419753085,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.019596315892612185,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 5.925925925925926,
+       "demand_lower_tbps": 5.925925925925926,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.019596315892612185,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 5.925925925925926,
+       "demand_lower_tbps": 5.925925925925926,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.9259259259259258,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 15,
+      "storage_ports_required": 15,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.003657978966620942,
+       "demand_lower_tbps": 0.003657978966620942,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.01016105268505817,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.19753086419753085,
+       "demand_lower_tbps": 0.19753086419753085,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.019596315892612185,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 5.925925925925926,
+       "demand_lower_tbps": 5.925925925925926,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.019596315892612185,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 5.925925925925926,
+       "demand_lower_tbps": 5.925925925925926,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.9259259259259258,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 15,
+      "storage_ports_required": 15,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 1333.3333333333333,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.9259259259259258,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 0,
+    "line_tbps": 0.0,
+    "payload_gbytes_s": 0.0,
+    "served_line_tbps": 0.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 0.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 0.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.0,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S10",
+  "title": "Training read (Enhanced rate, cache hit 0.8) concurrent with the S08 write",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "normal",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 5.039999999999999,
+    "line_tbps": 5.599999999999999,
+    "payload_gbytes_s": 629.9999999999999,
+    "served_line_tbps": 5.599999999999999,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 5.599999999999999,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.0017283950617283947,
+       "demand_lower_tbps": 0.0017283950617283947,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.004801097393689985,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.09333333333333331,
+       "demand_lower_tbps": 0.09333333333333331,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.009259259259259255,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 2.7999999999999994,
+       "demand_lower_tbps": 2.7999999999999994,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.009259259259259257,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 2.7999999999999994,
+       "demand_lower_tbps": 2.7999999999999994,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.4374999999999999,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 7,
+      "storage_ports_required": 7,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.0017283950617283947,
+       "demand_lower_tbps": 0.0017283950617283947,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.004801097393689985,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.09333333333333331,
+       "demand_lower_tbps": 0.09333333333333331,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.009259259259259255,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 2.7999999999999994,
+       "demand_lower_tbps": 2.7999999999999994,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.009259259259259257,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 2.7999999999999994,
+       "demand_lower_tbps": 2.7999999999999994,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.4374999999999999,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 7,
+      "storage_ports_required": 7,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 629.9999999999999,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.4374999999999999,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 3.3333333333333335,
+    "line_tbps": 3.7037037037037037,
+    "payload_gbytes_s": 416.6666666666667,
+    "served_line_tbps": 3.7037037037037037,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 3.7037037037037037,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.0011431184270690445,
+       "demand_lower_tbps": 0.0011431184270690445,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.003175328964080679,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0617283950617284,
+       "demand_lower_tbps": 0.0617283950617284,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0061238487164413085,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 1.8518518518518519,
+       "demand_lower_tbps": 1.8518518518518519,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0061238487164413085,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 1.8518518518518519,
+       "demand_lower_tbps": 1.8518518518518519,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.28935185185185186,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 5,
+      "storage_ports_required": 5,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.0011431184270690445,
+       "demand_lower_tbps": 0.0011431184270690445,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.003175328964080679,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0617283950617284,
+       "demand_lower_tbps": 0.0617283950617284,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0061238487164413085,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 1.8518518518518519,
+       "demand_lower_tbps": 1.8518518518518519,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0061238487164413085,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 1.8518518518518519,
+       "demand_lower_tbps": 1.8518518518518519,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.28935185185185186,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 5,
+      "storage_ports_required": 5,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 416.6666666666667,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.28935185185185186,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S11",
+  "title": "Enhanced scaled, SA-3 on unused NS-leaf ports, 2 ports per leaf",
+  "status": "STUDY",
+  "attachment": "leaf_distributed",
+  "failure": "normal",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 25.2,
+    "line_tbps": 28.0,
+    "payload_gbytes_s": 3150.0,
+    "served_line_tbps": 28.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 28.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.008641975308641974,
+       "demand_lower_tbps": 0.008641975308641974,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.024005486968449927,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.4666666666666667,
+       "demand_lower_tbps": 0.4666666666666667,
+       "capacity_tbps": 0.8,
+       "utilisation": 0.5833333333333333,
+       "verdict": "within",
+       "basis": "per hosting leaf (uniform placement)"
+      },
+      "storage_ports_required": 2,
+      "storage_ports_assigned": 2,
+      "ports_available_for_storage": 46,
+      "ns_aggregate_uplink": {
+       "demand_tbps": 20.3,
+       "demand_lower_tbps": 20.3,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.06712962962962962,
+       "verdict": "within",
+       "basis": "physical leaf->CVS, read+write remote share"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.7,
+       "demand_lower_tbps": 0.45111111111111113,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.06944444444444443,
+       "verdict": "within",
+       "basis": "physical leaf->CVS: hosted reads out + client writes out (envelope)"
+      }
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.008641975308641974,
+       "demand_lower_tbps": 0.008641975308641974,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.024005486968449927,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.4666666666666667,
+       "demand_lower_tbps": 0.4666666666666667,
+       "capacity_tbps": 0.8,
+       "utilisation": 0.5833333333333333,
+       "verdict": "within",
+       "basis": "per hosting leaf (uniform placement)"
+      },
+      "storage_ports_required": 2,
+      "storage_ports_assigned": 2,
+      "ports_available_for_storage": 46,
+      "ns_aggregate_uplink": {
+       "demand_tbps": 20.3,
+       "demand_lower_tbps": 20.3,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.06712962962962962,
+       "verdict": "within",
+       "basis": "physical leaf->CVS, read+write remote share"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.7,
+       "demand_lower_tbps": 0.45111111111111113,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.06944444444444443,
+       "verdict": "within",
+       "basis": "physical leaf->CVS: hosted reads out + client writes out (envelope)"
+      }
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 3150.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.5833333333333333,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 12.6,
+    "line_tbps": 14.0,
+    "payload_gbytes_s": 1575.0,
+    "served_line_tbps": 14.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 14.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.004320987654320987,
+       "demand_lower_tbps": 0.004320987654320987,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.012002743484224964,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.23333333333333334,
+       "demand_lower_tbps": 0.23333333333333334,
+       "capacity_tbps": 0.8,
+       "utilisation": 0.29166666666666663,
+       "verdict": "within",
+       "basis": "per hosting leaf (uniform placement)"
+      },
+      "storage_ports_required": 1,
+      "storage_ports_assigned": 2,
+      "ports_available_for_storage": 46,
+      "ns_aggregate_uplink": {
+       "demand_tbps": 20.3,
+       "demand_lower_tbps": 20.3,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.06712962962962962,
+       "verdict": "within",
+       "basis": "physical leaf->CVS, read+write remote share"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.7,
+       "demand_lower_tbps": 0.45111111111111113,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.06944444444444443,
+       "verdict": "within",
+       "basis": "physical leaf->CVS: hosted reads out + client writes out (envelope)"
+      }
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.004320987654320987,
+       "demand_lower_tbps": 0.004320987654320987,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.012002743484224964,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.23333333333333334,
+       "demand_lower_tbps": 0.23333333333333334,
+       "capacity_tbps": 0.8,
+       "utilisation": 0.29166666666666663,
+       "verdict": "within",
+       "basis": "per hosting leaf (uniform placement)"
+      },
+      "storage_ports_required": 1,
+      "storage_ports_assigned": 2,
+      "ports_available_for_storage": 46,
+      "ns_aggregate_uplink": {
+       "demand_tbps": 20.3,
+       "demand_lower_tbps": 20.3,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.06712962962962962,
+       "verdict": "within",
+       "basis": "physical leaf->CVS, read+write remote share"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.7,
+       "demand_lower_tbps": 0.45111111111111113,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.06944444444444443,
+       "verdict": "within",
+       "basis": "physical leaf->CVS: hosted reads out + client writes out (envelope)"
+      }
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 1575.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.29166666666666663,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {
+   "A": {
+    "ns_aggregate_up": {
+     "demand_tbps": 20.3,
+     "demand_lower_tbps": 20.3,
+     "capacity_tbps": 302.40000000000003,
+     "utilisation": 0.06712962962962962,
+     "verdict": "within",
+     "basis": "physical leaf->CVS, read+write remote share"
+    },
+    "ns_aggregate_down": {
+     "demand_tbps": 20.3,
+     "demand_lower_tbps": 20.3,
+     "capacity_tbps": 302.40000000000003,
+     "utilisation": 0.06712962962962962,
+     "verdict": "within",
+     "basis": "physical CVS->leaf, read+write remote share"
+    },
+    "ns_leaf_up": {
+     "demand_tbps": 0.7,
+     "demand_lower_tbps": 0.45111111111111113,
+     "capacity_tbps": 10.080000000000002,
+     "utilisation": 0.06944444444444443,
+     "verdict": "within",
+     "basis": "physical leaf->CVS: hosted reads out + client writes out (envelope)"
+    },
+    "ns_leaf_down": {
+     "demand_tbps": 0.7,
+     "demand_lower_tbps": 0.4511111111111111,
+     "capacity_tbps": 10.080000000000002,
+     "utilisation": 0.06944444444444443,
+     "verdict": "within",
+     "basis": "physical CVS->leaf: hosted writes in + client reads in (envelope)"
+    },
+    "logical_read_tbps": 14.0,
+    "logical_write_tbps": 7.0
+   },
+   "B": {
+    "ns_aggregate_up": {
+     "demand_tbps": 20.3,
+     "demand_lower_tbps": 20.3,
+     "capacity_tbps": 302.40000000000003,
+     "utilisation": 0.06712962962962962,
+     "verdict": "within",
+     "basis": "physical leaf->CVS, read+write remote share"
+    },
+    "ns_aggregate_down": {
+     "demand_tbps": 20.3,
+     "demand_lower_tbps": 20.3,
+     "capacity_tbps": 302.40000000000003,
+     "utilisation": 0.06712962962962962,
+     "verdict": "within",
+     "basis": "physical CVS->leaf, read+write remote share"
+    },
+    "ns_leaf_up": {
+     "demand_tbps": 0.7,
+     "demand_lower_tbps": 0.45111111111111113,
+     "capacity_tbps": 10.080000000000002,
+     "utilisation": 0.06944444444444443,
+     "verdict": "within",
+     "basis": "physical leaf->CVS: hosted reads out + client writes out (envelope)"
+    },
+    "ns_leaf_down": {
+     "demand_tbps": 0.7,
+     "demand_lower_tbps": 0.4511111111111111,
+     "capacity_tbps": 10.080000000000002,
+     "utilisation": 0.06944444444444443,
+     "verdict": "within",
+     "basis": "physical CVS->leaf: hosted writes in + client reads in (envelope)"
+    },
+    "logical_read_tbps": 14.0,
+    "logical_write_tbps": 7.0
+   }
+  },
+  "flags": [],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S11f",
+  "title": "S11 with side A lost (replica distribution unknown)",
+  "status": "STUDY",
+  "attachment": "leaf_distributed",
+  "failure": "side_lost:A",
+  "missing_inputs": [
+   "sa3_failure_replica_placement"
+  ],
+  "directions": {},
+  "physical_cuts": {},
+  "flags": [],
+  "note": "",
+  "result_state": "NOT_EVALUATED_HOLD"
+ },
+ {
+  "id": "S12",
+  "title": "S09 with one side-A NS leaf lost; affected trays move to side B (rho = 1)",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "ns_leaf_lost:A",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 10.666666666666666,
+    "line_tbps": 11.851851851851851,
+    "payload_gbytes_s": 1333.3333333333333,
+    "served_line_tbps": 11.851851851851851,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 11.851851851851851,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.003657978966620942,
+       "demand_lower_tbps": 0.003657978966620942,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.01016105268505817,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.19753086419753085,
+       "demand_lower_tbps": 0.19753086419753085,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.019596315892612185,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 5.728395061728395,
+       "demand_lower_tbps": 5.728395061728395,
+       "capacity_tbps": 292.32000000000005,
+       "utilisation": 0.019596315892612185,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 5.728395061728395,
+       "demand_lower_tbps": 5.728395061728395,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.8950617283950616,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 15,
+      "storage_ports_required": 15,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.007315957933241884,
+       "demand_lower_tbps": 0.007315957933241884,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.02032210537011634,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.3950617283950617,
+       "demand_lower_tbps": 0.20411522633744855,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.03919263178522437,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 6.1234567901234565,
+       "demand_lower_tbps": 6.1234567901234565,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.020249526422365924,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 6.1234567901234565,
+       "demand_lower_tbps": 6.1234567901234565,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.95679012345679,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 16,
+      "storage_ports_required": 16,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 1333.3333333333333,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.95679012345679,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 0,
+    "line_tbps": 0.0,
+    "payload_gbytes_s": 0.0,
+    "served_line_tbps": 0.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 0.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 292.32000000000005,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 0.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.0,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S13",
+  "title": "One tray reads 100 GB/s while 1,620 trays write 1 GB/s in total",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "normal",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 0.8,
+    "line_tbps": 0.888888888888889,
+    "payload_gbytes_s": 100.0,
+    "served_line_tbps": 0.888888888888889,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 0.888888888888889,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 1.2345679012345678,
+       "verdict": "exceeds",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.014814814814814815,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04409171075837742,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.001469723691945914,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.06944444444444445,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 2,
+      "storage_ports_required": 2,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 1.2345679012345678,
+       "verdict": "exceeds",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.014814814814814815,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04409171075837742,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.001469723691945914,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.06944444444444445,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 2,
+      "storage_ports_required": 2,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 100.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 1.2345679012345678,
+    "deadline_stretch_lower": 1.2345679012345678,
+    "deadline_stretch": 1.2345679012345678,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 0.008,
+    "line_tbps": 0.008888888888888889,
+    "payload_gbytes_s": 1.0,
+    "served_line_tbps": 0.008888888888888889,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 0.008888888888888889,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 2.7434842249657065e-06,
+       "demand_lower_tbps": 2.7434842249657065e-06,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 7.620789513793629e-06,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.00014814814814814815,
+       "demand_lower_tbps": 0.00014814814814814815,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 1.4697236919459139e-05,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0044444444444444444,
+       "demand_lower_tbps": 0.0044444444444444444,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 1.469723691945914e-05,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0044444444444444444,
+       "demand_lower_tbps": 0.0044444444444444444,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0006944444444444444,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 1,
+      "storage_ports_required": 1,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 2.7434842249657065e-06,
+       "demand_lower_tbps": 2.7434842249657065e-06,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 7.620789513793629e-06,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.00014814814814814815,
+       "demand_lower_tbps": 0.00014814814814814815,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 1.4697236919459139e-05,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0044444444444444444,
+       "demand_lower_tbps": 0.0044444444444444444,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 1.469723691945914e-05,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0044444444444444444,
+       "demand_lower_tbps": 0.0044444444444444444,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0006944444444444444,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 1,
+      "storage_ports_required": 1,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 1.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.0006944444444444444,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [
+   "read/A: client_port exceeds (hottest client 1.235)",
+   "read/B: client_port exceeds (hottest client 1.235)"
+  ],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S14",
+  "title": "Two single-tray reads of 50 GB/s, group overlap unknown",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "normal",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 0.8,
+    "line_tbps": 0.888888888888889,
+    "payload_gbytes_s": 100.0,
+    "served_line_tbps": 0.888888888888889,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 0.888888888888889,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.22222222222222224,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 1.2345679012345678,
+       "verdict": "HOLD",
+       "basis": "envelope (group overlap unknown)"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.014814814814814815,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04409171075837742,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.001469723691945914,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.06944444444444445,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 2,
+      "storage_ports_required": 2,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.22222222222222224,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 1.2345679012345678,
+       "verdict": "HOLD",
+       "basis": "envelope (group overlap unknown)"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.014814814814814815,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04409171075837742,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.001469723691945914,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.06944444444444445,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 2,
+      "storage_ports_required": 2,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 100.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 1.2345679012345678,
+    "deadline_stretch_lower": null,
+    "deadline_stretch": null,
+    "deadline_note": "not determined: a cut is HOLD"
+   },
+   "write": {
+    "payload_tbps": 0,
+    "line_tbps": 0.0,
+    "payload_gbytes_s": 0.0,
+    "served_line_tbps": 0.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 0.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 0.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.0,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [
+   "read/A: client_port HOLD (hottest client 1.235)",
+   "read/B: client_port HOLD (hottest client 1.235)"
+  ],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "S14d",
+  "title": "S14 with the two groups declared disjoint",
+  "status": "STUDY",
+  "attachment": "cvs_ports",
+  "failure": "normal",
+  "missing_inputs": [],
+  "directions": {
+   "read": {
+    "payload_tbps": 0.8,
+    "line_tbps": 0.888888888888889,
+    "payload_gbytes_s": 100.0,
+    "served_line_tbps": 0.888888888888889,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 0.888888888888889,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.22222222222222224,
+       "demand_lower_tbps": 0.22222222222222224,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.6172839506172839,
+       "verdict": "within",
+       "basis": "exact (disjoint groups)"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.014814814814814815,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04409171075837742,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.001469723691945914,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.06944444444444445,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 2,
+      "storage_ports_required": 2,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.22222222222222224,
+       "demand_lower_tbps": 0.22222222222222224,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.6172839506172839,
+       "verdict": "within",
+       "basis": "exact (disjoint groups)"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.014814814814814815,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.04409171075837742,
+       "verdict": "within",
+       "basis": "worst-case tray placement envelope"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.001469723691945914,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.4444444444444445,
+       "demand_lower_tbps": 0.4444444444444445,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.06944444444444445,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 2,
+      "storage_ports_required": 2,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 100.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.6172839506172839,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   },
+   "write": {
+    "payload_tbps": 0,
+    "line_tbps": 0.0,
+    "payload_gbytes_s": 0.0,
+    "served_line_tbps": 0.0,
+    "unserved_line_tbps": 0.0,
+    "served_line_upper_tbps": 0.0,
+    "unserved_line_lower_tbps": 0.0,
+    "conservation_ok": true,
+    "sides": {
+     "A": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     },
+     "B": {
+      "client_port": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 0.36000000000000004,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_leaf_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 10.080000000000002,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "ns_aggregate_uplink": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 302.40000000000003,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_attachment": {
+       "demand_tbps": 0.0,
+       "demand_lower_tbps": 0.0,
+       "capacity_tbps": 6.4,
+       "utilisation": 0.0,
+       "verdict": "within",
+       "basis": "exact"
+      },
+      "storage_ports_required_lower": 0,
+      "storage_ports_required": 0,
+      "storage_ports_assigned": 16,
+      "ports_available_for_storage": 40
+     }
+    },
+    "storage_endpoint": {
+     "demand_gbytes_s": 0.0,
+     "limit_gbytes_s": null,
+     "verdict": "HOLD"
+    },
+    "worst_network_utilisation": 0.0,
+    "deadline_stretch_lower": 1.0,
+    "deadline_stretch": 1.0,
+    "deadline_note": "network-only stretch; storage system (C5) and host limits not included"
+   }
+  },
+  "physical_cuts": {},
+  "flags": [],
+  "note": "",
+  "result_state": "EVALUATED_STUDY"
+ },
+ {
+  "id": "P00",
+  "title": "Project scenario; all demand inputs HOLD",
+  "status": "HOLD",
+  "attachment": "cvs_ports",
+  "failure": "normal",
+  "missing_inputs": [
+   "dataset.unique_tb",
+   "dataset.deadline_s",
+   "dataset.clients",
+   "train.unique_tb",
+   "train.deadline_s",
+   "train.clients",
+   "ckpt.unique_tb",
+   "ckpt.deadline_s",
+   "ckpt.clients",
+   "restart.unique_tb",
+   "restart.deadline_s",
+   "restart.clients",
+   "payload_efficiency",
+   "reserve_fraction",
+   "clients_per_leaf_max",
+   "storage_ports.A",
+   "storage_ports.B",
+   "border_reserved_ports"
+  ],
+  "directions": {},
+  "physical_cuts": {},
+  "flags": [],
+  "note": "dataset size, cache capacity/hit, concurrency, checkpoint size/interval/deadline, storage system throughput, client multipath and port assignment are HOLD",
+  "result_state": "NOT_EVALUATED_HOLD"
+ }
+]
