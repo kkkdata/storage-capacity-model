@@ -6,7 +6,7 @@ authors:
     given-names: Rui
     affiliation: "K&K Data Service Inc."
 license: MIT
-repository-code: "https://github.com/kkdatasvc/storage-capacity-model"
+repository-code: "https://github.com/kkkdata/storage-capacity-model"
 preferred-citation:
   type: report
   title: "A Conservative Scenario Method for Storage-Access Capacity and Failure Bounds in a Dual-Plane GB300 NVL72 Cluster Network"
