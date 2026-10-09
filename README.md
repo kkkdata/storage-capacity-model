@@ -56,6 +56,11 @@ No dependencies beyond the Python 3 standard library.
 - Citable design numbers index:
   [kkdatasvc.com/lab/numbers](https://www.kkdatasvc.com/lab/numbers/).
 
+## Archived version
+
+This repository is archived on Zenodo as a citable software record:
+DOI [10.5281/zenodo.23251772](https://doi.org/10.5281/zenodo.23251772) (v1.0.0).
+
 ## License
 
 - Code (`*.py`): MIT License (see `LICENSE`).
